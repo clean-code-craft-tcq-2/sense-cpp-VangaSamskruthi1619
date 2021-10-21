@@ -1,4 +1,6 @@
 #include "stats.h"
+#include "math.h"
+
 using namespace std;
 
 struct Stats
