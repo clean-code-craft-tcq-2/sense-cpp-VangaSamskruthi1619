@@ -1,7 +1,7 @@
 #include "stats.h"
 using namespace std;
 
-Stats Statistics::ComputeStatistics(const std::vector<___>& ) {
+Stats Statistics::ComputeStatistics(const std::vector<___>& func ) {
     //Implement statistics here
     struct sensor_stat
     {
