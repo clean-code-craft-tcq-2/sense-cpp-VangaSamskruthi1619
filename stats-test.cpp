@@ -37,5 +37,5 @@ TEST_CASE("average is NaN for empty array") {
     statsAlerter.checkAndAlert({99.8, 34.2, 4.5, 6.7});
 
     REQUIRE(emailAlert.emailSent);
-    REQUIRE(ledAlert.ledGlows);*/
-}
+    REQUIRE(ledAlert.ledGlows);
+}*/
