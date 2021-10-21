@@ -7,7 +7,6 @@ using namespace std;
 Stats Statistics::ComputeStatistics(const std::vector<double>& func ) 
 {
     //Implement statistics here
-    //vector<double> myvector{};
     Stats sensor1;
     if (func.empty())
     {
@@ -17,7 +16,8 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& func )
     }
     else
     {
-        sensor1.average = std::accumulate(func.begin(), func.end(), 0.0) / func.size();
+        double avg = std::accumulate(func.begin(), func.end(), 0.0) / func.size();
+        sensor1.average = round(avg*1000.0)/1000.0;
         sensor1.max = *std::max_element(func.begin(), func.end()); 
         sensor1.min = *std::min_element(func.begin(), func.end()); 
     }
