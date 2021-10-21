@@ -1,15 +1,17 @@
 #include "stats.h"
 using namespace std;
 
-Stats Statistics::ComputeStatistics(const std::vector<___>& func ) {
-    //Implement statistics here
-    struct sensor_stat
-    {
+struct Stats
+{
         float average;
         float max;
         float min;
-    }sensor1;
-    
+};
+
+Stats Statistics::ComputeStatistics(const std::vector<___>& func ) 
+{
+    //Implement statistics here
+    Stats sensor1;
     if (func.empty())
     {
         sensor1.average = (sqrt(-1.0)); 
