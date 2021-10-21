@@ -6,14 +6,15 @@ using namespace std;
 
 struct Stats
 {
-        float average;
-        float max;
-        float min;
+        double average;
+        double max;
+        double min;
 };
 
-Stats Statistics::ComputeStatistics(const std::vector<___>& func ) 
+Stats Statistics::ComputeStatistics(const std::vector<double>& func ) 
 {
     //Implement statistics here
+    //vector<double> myvector{};
     Stats sensor1;
     if (func.empty())
     {
