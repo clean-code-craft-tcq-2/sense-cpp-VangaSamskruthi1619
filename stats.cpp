@@ -4,13 +4,6 @@
 
 using namespace std;
 
-struct Stats
-{
-        double average;
-        double max;
-        double min;
-};
-
 Stats Statistics::ComputeStatistics(const std::vector<double>& func ) 
 {
     //Implement statistics here
