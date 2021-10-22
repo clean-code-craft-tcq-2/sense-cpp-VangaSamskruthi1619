@@ -9,15 +9,15 @@ struct Stats
 struct EmailAlert
 {
         bool emailSent = false;
-}
+};
 struct LEDAlert
 {
         bool ledGlows = false;
-}
+};
 struct IAlerter
 {
         bool Alerter = false;
-}
+};
 
 Class StatsAlerter
 {
