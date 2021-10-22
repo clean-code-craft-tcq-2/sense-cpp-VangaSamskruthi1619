@@ -19,7 +19,7 @@ struct IAlerter
         bool Alerter = false;
 };
 
-Class StatsAlerter
+class StatsAlerter
 {
         public :
                 StatsAlerter(){}
