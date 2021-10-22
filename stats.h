@@ -16,7 +16,9 @@ struct LEDAlert
 };
 struct IAlerter
 {
-        bool Alerter = false;
+        //bool Alerter = false;
+        EmailAlert emailAlert;
+        LEDAlert ledAlert;
 };
 //typedef bool IAlerter;
 
