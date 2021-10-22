@@ -25,7 +25,7 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& vect )
 }
 void StatsAlerter::checkAndAlert(const std::vector<double>& vect)
 {
-    if(*std::max_element(func.begin(), func.end()) > MaxThreshold)
+    if(*std::max_element(vect.begin(), vect.end()) > MaxThreshold)
     {
         alert[0].emailSent = true;
         alert[1].ledGlows = true;
