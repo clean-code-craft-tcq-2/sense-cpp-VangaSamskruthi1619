@@ -18,7 +18,7 @@ struct LEDAlert
 {
         bool Alerter = false;
 };*/
-typedef IAlerter bool
+typedef bool IAlerter
 
 class StatsAlerter
 {
