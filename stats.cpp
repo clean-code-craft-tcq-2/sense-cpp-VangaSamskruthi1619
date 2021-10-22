@@ -27,12 +27,12 @@ void StatsAlerter::checkAndAlert(const std::vector<double>& vect)
 {
     if(*std::max_element(vect.begin(), vect.end()) > MaxThreshold)
     {
-        alert[0].emailSent = true;
-        alert[1].ledGlows = true;
+        alert[0]->emailSent = true;
+        alert[1]->ledGlows = true;
     }
     else
     {
-        alert[0].emailSent = false;
-        alert[1].ledGlows = false;
+        alert[0]->emailSent = false;
+        alert[1]->ledGlows = false;
     }
 }
