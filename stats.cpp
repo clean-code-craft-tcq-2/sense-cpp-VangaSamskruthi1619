@@ -8,7 +8,7 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& vect )
 {
     //Implement statistics here
     Stats sensor1;
-    if (func.empty())
+    if (vect.empty())
     {
         sensor1.average = (sqrt(-1.0)); 
         sensor1.max = (sqrt(-1.0));
