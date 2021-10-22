@@ -24,7 +24,7 @@ class StatsAlerter
         public :
                 StatsAlerter(){}
                 StatsAlerter(const float Maxthreshold,std::vector<IAlerter*> Alert): MaxThreshold(Maxthreshold),alert(Alert){}
-                const float MaxThreshold;
+                const float MaxThreshold = 0.0;
                 std::vector<IAlerter*> alert;
                 void checkAndAlert(const std::vector<double>&);                  
 };           
