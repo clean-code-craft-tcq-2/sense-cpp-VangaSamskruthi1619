@@ -14,11 +14,11 @@ struct LEDAlert
 {
         bool ledGlows = false;
 };
-/*struct IAlerter
+struct IAlerter
 {
         bool Alerter = false;
-};*/
-typedef bool IAlerter;
+};
+//typedef bool IAlerter;
 
 class StatsAlerter
 {
