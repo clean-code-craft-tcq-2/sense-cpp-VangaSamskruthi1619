@@ -15,8 +15,8 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& vect )
     }
     else
     {
-        double avg = std::accumulate(vect.begin(), vect.end(), 0.0) / vect.size();
-        sensor1.average = round(avg*1000.0)/1000.0;
+        double avg = std::accumulate(vect.begin(), vect.end(), 0.0f) / vect.size();
+        sensor1.average = round(avg*1000.0f)/1000.0f;
         sensor1.max = *std::max_element(vect.begin(), vect.end()); 
         sensor1.min = *std::min_element(vect.begin(), vect.end()); 
     }
