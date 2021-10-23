@@ -24,16 +24,16 @@ struct IAlerter
 class IAlerter{
         public:
                 IAlerter(){}
+                bool emailSent = false;
+                bool ledGlows = false;
 };
 class EmailAlert : public IAlerter{
         public:
-                EmailAlert(){}
-                bool emailSent = false;
+                EmailAlert(){}               
 };
 class LEDAlert : public IAlerter{
         public:
-                LEDAlert(){}
-                bool ledGlows = false;
+                LEDAlert(){}                
 };
 
 class StatsAlerter
