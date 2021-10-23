@@ -23,16 +23,17 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& vect )
     }
     return sensor1;  
 }
+
 void StatsAlerter::checkAndAlert(const std::vector<double>& vect)
 {
     if(*std::max_element(vect.begin(), vect.end()) > MaxThreshold)
     {
-        alert[0]->emailAlert.emailSent = true;
-        alert[1]->ledAlert.ledGlows = true;
+        alert[0]->emailSent = true;
+        alert[1]->ledGlows = true;
     }
     else
     {
-        alert[0]->emailAlert.emailSent = false;
-        alert[1]->ledAlert.ledGlows = false;
+        alert[0]->emailSent = false;
+        alert[1]->ledGlows = false;
     }
 }
