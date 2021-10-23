@@ -1,7 +1,6 @@
 #include "stats.h"
 #include "math.h"
 #include <bits/stdc++.h>
-
 using namespace std;
 
 Stats Statistics::ComputeStatistics(const std::vector<double>& vect ) 
@@ -10,9 +9,9 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& vect )
     Stats sensor1;
     if (vect.empty())
     {
-        sensor1.average = (sqrt(-1.0)); 
-        sensor1.max = (sqrt(-1.0));
-        sensor1.min = (sqrt(-1.0));
+        sensor1.average = (sqrt(-1.0f)); 
+        sensor1.max = (sqrt(-1.0f));
+        sensor1.min = (sqrt(-1.0f));
     }
     else
     {
