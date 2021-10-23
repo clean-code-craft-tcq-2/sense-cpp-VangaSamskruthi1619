@@ -6,7 +6,7 @@ struct Stats
         double max = 0.0;
         double min = 0.0;
 };
-struct EmailAlert
+/*struct EmailAlert
 {
         bool emailSent = false;
 };
@@ -19,8 +19,22 @@ struct IAlerter
         //bool Alerter = false;
         EmailAlert emailAlert;
         LEDAlert ledAlert;
-};
+};*/
 //typedef bool IAlerter;
+class IAlerter{
+        public:
+                IAlerter(){}
+};
+class EmailAlert : public IAlerter{
+        public:
+                EmailAlert(){}
+                bool emailSent = false;
+};
+class LEDAlert : public IAlerter{
+        public:
+                LEDAlert(){}
+                bool ledGlows = false;
+};
 
 class StatsAlerter
 {
