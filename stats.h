@@ -1,11 +1,10 @@
 #include <vector>
 
 struct Stats{
-        double average = 0.0;
-        double max = 0.0;
-        double min = 0.0;
+        double average = 0.0f;
+        double max = 0.0f;
+        double min = 0.0f;
 };
-
 class IAlerter{
         public:
                 IAlerter(){}
@@ -26,7 +25,7 @@ class StatsAlerter
         public :
                 StatsAlerter(){}
                 StatsAlerter(const float Maxthreshold,std::vector<IAlerter*> Alert): MaxThreshold(Maxthreshold),alert(Alert){}
-                const float MaxThreshold = 0.0;
+                const float MaxThreshold = 0.0f;
                 std::vector<IAlerter*> alert;
                 void checkAndAlert(const std::vector<double>&);                  
 };           
