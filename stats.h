@@ -1,26 +1,11 @@
 #include <vector>
 
-struct Stats
-{
+struct Stats{
         double average = 0.0;
         double max = 0.0;
         double min = 0.0;
 };
-/*struct EmailAlert
-{
-        bool emailSent = false;
-};
-struct LEDAlert
-{
-        bool ledGlows = false;
-};
-struct IAlerter
-{
-        //bool Alerter = false;
-        EmailAlert emailAlert;
-        LEDAlert ledAlert;
-};*/
-//typedef bool IAlerter;
+
 class IAlerter{
         public:
                 IAlerter(){}
